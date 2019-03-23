@@ -1,0 +1,36 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$primary: mat-palette($mat-grey,900);
+$accent:  mat-palette($mat-amber,A400);
+
+$hotelSystem-warn:    mat-palette($mat-red);
+$hotelSystem: mat-light-theme($primary, $accent, $hotelSystem-warn);
+
+
+@include angular-material-theme($hotelSystem);
+
+a{
+    color: mat-color($accent);
+}
+
+mat-nav-list{
+    background-color :mat-color($primary);
+}
+
+.navtabs-container{
+    background-color:mat-color($accent);   
+}
+
+ 
+
+.mat-list-option:hover,
+.mat-list-option.mat-list-item-focus,
+.mat-nav-list .mat-list-item:hover,
+.mat-nav-list .mat-list-item.mat-list-item-focus{
+    background-color: mat-color($primary,700);
+    color:mat-color($primary,800);
+}
+
+

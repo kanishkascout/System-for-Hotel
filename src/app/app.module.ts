@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule} from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -15,7 +16,6 @@ import { LifestyleComponent } from './lifestyle/lifestyle.component';
 import { ResortActivitiesComponent } from './lifestyle/resort-activities/resort-activities.component';
 import { ExperiencesComponent } from './lifestyle/experiences/experiences.component';
 import { WeddingsComponent } from './weddings/weddings.component';
-import { CelebrationsComponent } from './celebrations/celebrations.component';
 import { OffersComponent } from './offers/offers.component';
 import { AuthComponent } from './auth/auth.component';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
@@ -37,7 +37,7 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
     ResortActivitiesComponent,
     ExperiencesComponent,
     WeddingsComponent,
-    CelebrationsComponent,
+  
     OffersComponent,
     AuthComponent,
     SignInComponent,
@@ -51,7 +51,8 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
