@@ -8,29 +8,19 @@ $accent:  mat-palette($mat-amber,A400);
 $hotelSystem-warn:    mat-palette($mat-red);
 $hotelSystem: mat-light-theme($primary, $accent, $hotelSystem-warn);
 
+@import './app/navigation/navtabs/navtabs.component-theme.scss';
+@import './app/navigation/sidenav-list/sidenav-list.component-theme.scss';
+@import './app/navigation/header/header.component-theme.scss';
 
 @include angular-material-theme($hotelSystem);
 
-a{
-    color: mat-color($accent);
-}
+//navigate to navtabs-component-theme.scss file
+@include navtabs-component-theme($hotelSystem);
 
-mat-nav-list{
-    background-color :mat-color($primary);
-}
+@include sidenav-list-component-theme($hotelSystem);
 
-.navtabs-container{
-    background-color:mat-color($accent);   
-}
+@include header-component-theme($hotelSystem);
 
- 
 
-.mat-list-option:hover,
-.mat-list-option.mat-list-item-focus,
-.mat-nav-list .mat-list-item:hover,
-.mat-nav-list .mat-list-item.mat-list-item-focus{
-    background-color: mat-color($primary,700);
-    color:mat-color($primary,800);
-}
 
 

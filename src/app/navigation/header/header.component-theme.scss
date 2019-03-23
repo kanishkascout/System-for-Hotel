@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+@mixin  header-component-theme($hotelSystem){
+
+
+    $primary : map-get($hotelSystem,primary);
+    $accent : map-get($hotelSystem,accent);
+
+    a{
+        color :mat-color($accent);
+    }
+}
