@@ -1,4 +1,4 @@
-<div class="mymenu">
+<div class="side-menu">
     <div routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
     <mat-nav-list  >
         <a class="links" mat-list-item  routerLink = ""
@@ -7,8 +7,6 @@
         <span >  Home</span>
         </a>
       </mat-nav-list>
-      
-
   <mat-nav-list  >
     <a class="links" mat-list-item routerLink = '/accomodation'(click)="onToggleClose()">
     <mat-icon  >hotel</mat-icon>
@@ -34,13 +32,29 @@
     </a>
   </mat-nav-list>
   <mat-nav-list >
-    <a class="links"  mat-list-item routerLink = '/offers'(click)="onToggleClose()">
-    <mat-icon  >loyalty</mat-icon>
-    <span > Offers</span>
+    <a class="links"  mat-list-item routerLink = '/gallery'(click)="onToggleClose()">
+    <mat-icon  >image</mat-icon>
+    <span > Gallery</span>
     </a>
   </mat-nav-list>
   <mat-nav-list >
-      
+      <a class="links"  mat-list-item routerLink = '/location'(click)="onToggleClose()">
+      <mat-icon >location_on</mat-icon>
+      <span > Location</span>
+      </a>
     </mat-nav-list>
+  <mat-nav-list >
+      <a class="links"  mat-list-item routerLink = '/offers'(click)="onToggleClose()">
+        <mat-icon  >loyalty</mat-icon>
+        <span > Offers</span>
+        </a>
+    </mat-nav-list>
+    <mat-nav-list >
+        <a class="links"  mat-list-item routerLink = '/contact'(click)="onToggleClose()">
+        <mat-icon  >call</mat-icon>
+        <span > Contact Us</span>
+        </a>
+      </mat-nav-list>
+      
   </div>
 </div>

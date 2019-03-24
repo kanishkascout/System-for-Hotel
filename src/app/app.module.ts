@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { AccomodationComponent } from './accomodation/accomodation.component';
-import { RoomsComponent } from './accomodation/rooms/rooms.component';
 import { FoodAndBeverageComponent } from './food-and-beverage/food-and-beverage.component';
 import { RestaurantComponent } from './food-and-beverage/restaurant/restaurant.component';
 import { BarsComponent } from './food-and-beverage/bars/bars.component';
@@ -25,12 +24,14 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './contact/contact.component';
+import { LocationComponent } from './location/location.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccomodationComponent,
-    RoomsComponent,
     FoodAndBeverageComponent,
     RestaurantComponent,
     BarsComponent,
@@ -46,7 +47,10 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    NavtabsComponent
+    NavtabsComponent,
+    ContactComponent,
+    LocationComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
