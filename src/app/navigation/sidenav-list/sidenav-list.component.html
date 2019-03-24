@@ -1,4 +1,14 @@
 <div class="mymenu">
+    <div routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+    <mat-nav-list  >
+        <a class="links" mat-list-item  routerLink = ""
+        (click)="onToggleClose()">
+        <mat-icon>home</mat-icon>
+        <span >  Home</span>
+        </a>
+      </mat-nav-list>
+      
+
   <mat-nav-list  >
     <a class="links" mat-list-item routerLink = '/accomodation'(click)="onToggleClose()">
     <mat-icon  >hotel</mat-icon>
@@ -29,4 +39,8 @@
     <span > Offers</span>
     </a>
   </mat-nav-list>
+  <mat-nav-list >
+      
+    </mat-nav-list>
+  </div>
 </div>

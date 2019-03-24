@@ -5,9 +5,7 @@
     $primary : map-get($hotelSystem,primary);
     $accent : map-get($hotelSystem,accent);
 
-    .navtabs-container{
-        background-color:mat-color($accent);   
-    }
+    
 }
 
 

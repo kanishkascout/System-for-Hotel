@@ -2,10 +2,75 @@
 
 @include mat-core();
 
-$primary: mat-palette($mat-grey,900);
-$accent:  mat-palette($mat-amber,A400);
+$primary : (
+    50 : #e4e4e4,
+    100 : #bcbcbc,
+    200 : #909090,
+    300 : #646464,
+    400 : #424242,
+    500 : #212121,
+    600 : #1d1d1d,
+    700 : #181818,
+    800 : #141414,
+    900 : #0b0b0b,
+    A100 : #e76c6c,
+    A200 : #e04040,
+    A400 : #ec0000,
+    A700 : #d30000,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+$accent : (
+    50 : #fff8e0,
+    100 : #ffedb3,
+    200 : #ffe280,
+    300 : #ffd64d,
+    400 : #ffcd26,
+    500 : #ffc400,
+    600 : #ffbe00,
+    700 : #ffb600,
+    800 : #ffaf00,
+    900 : #ffa200,
+    A100 : #ffffff,
+    A200 : #fffaf2,
+    A400 : #ffe5bf,
+    A700 : #ffdaa6,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
 
-$hotelSystem-warn:    mat-palette($mat-red);
+$primary: mat-palette($primary,700,300,900);
+$accent:  mat-palette($accent,500,400,700);
+
+$hotelSystem-warn:  mat-palette($mat-red);
 $hotelSystem: mat-light-theme($primary, $accent, $hotelSystem-warn);
 
 @import './app/navigation/navtabs/navtabs.component-theme.scss';

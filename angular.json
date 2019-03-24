@@ -82,7 +82,7 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/styles.css",
-              "src/hotelSystem.scc"
+              "src/hotelSystem.scss"
             ],
             "scripts": [],
             "assets": [
