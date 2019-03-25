@@ -1,5 +1,41 @@
 <div class="navtabs-container" >
-  <nav mat-tab-nav-bar color="accent" fxFlex fxLayout fxLayoutAlign="center center">
+  <nav mat-tab-nav-bar class="navtabs"  fxFlex fxLayout fxLayoutAlign="center center">
   
+    <a class="mytab" mat-tab-link routerLink="/"
+    routerLinkActive #home="routerLinkActive"
+    [active] = "home.isActive" >
+    Home
+  </a>
+  <a class="mytab" mat-tab-link routerLink="/accomodation"
+  routerLinkActive #accomodation="routerLinkActive"
+  [active] = "accomodation.isActive" >
+  Accomodation
+</a>
+  
+  <a class="mytab" mat-tab-link routerLink="/weddings"
+    routerLinkActive #weddings="routerLinkActive"
+    [active] = "weddings.isActive">
+    Events
+  </a>
+  <a class="mytab" mat-tab-link routerLink="/gallery"
+    routerLinkActive #gallery="routerLinkActive"
+    [active] = "gallery.isActive">
+    Gallery
+  </a>
+  <a class="mytab" mat-tab-link routerLink="/offers"
+    routerLinkActive #offers="routerLinkActive"
+    [active] = "offers.isActive">
+    Offers
+  </a>
+  <a class="mytab" mat-tab-link routerLink="/location"
+    routerLinkActive #location="routerLinkActive"
+    [active] = "location.isActive">
+    Location
+  </a>
+  <a class="mytab" mat-tab-link routerLink="/contact"
+    routerLinkActive #contact="routerLinkActive"
+    [active] = "contact.isActive">
+    Contact Us
+  </a>
   </nav>
 </div>
