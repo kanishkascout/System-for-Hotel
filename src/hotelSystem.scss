@@ -3,20 +3,20 @@
 @include mat-core();
 
 $primary : (
-    50 : #ece5f1,
-    100 : #d0bfdc,
-    200 : #b194c5,
-    300 : #9169ae,
-    400 : #7a489c,
-    500 : #62288b,
-    600 : #5a2483,
-    700 : #501e78,
-    800 : #46186e,
-    900 : #340f5b,
-    A100 : #c391ff,
-    A200 : #a75eff,
-    A400 : #8a2bff,
-    A700 : #7c12ff,
+    50 : #e0e0e0,
+    100 : #b3b3b3,
+    200 : #808080,
+    300 : #4d4d4d,
+    400 : #262626,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #a6a6a6,
+    A200 : #8c8c8c,
+    A400 : #737373,
+    A700 : #666666,
     contrast: (
         50 : #000000,
         100 : #000000,
@@ -67,7 +67,7 @@ $accent : (
     )
 );
 
-$primary: mat-palette($primary,700,300,900);
+$primary: mat-palette($primary,500,300,900);
 $accent:  mat-palette($accent,500,400,700);
 
 $hotelSystem-warn:  mat-palette($mat-red);
