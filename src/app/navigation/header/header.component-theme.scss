@@ -6,7 +6,8 @@
     $primary : map-get($hotelSystem,primary);
     $accent : map-get($hotelSystem,accent);
 
-    a{
-        color :mat-color($accent,500);
+    .btn{
+        color :mat-color($accent,300);
     }
+   
 }

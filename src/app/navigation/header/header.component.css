@@ -8,6 +8,8 @@
     width: 100px;
 }
 
-.head{
+.btn{
     margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bolder;
 }

@@ -1,7 +1,7 @@
 <mat-toolbar color ="primary">
   <div>
-    <button mat-icon-button [routerLink]="['/']" routerLinkActive="mat-accent" >
-        <mat-icon >home</mat-icon>
+    <button class="btn" mat-icon-button [routerLink]="['/']" routerLinkActive="mat-accent" >
+        <mat-icon style="size :20px">home</mat-icon>
       
     </button>
   </div>
@@ -11,18 +11,18 @@
     </div>
     
   </div>
+  <div>
+    <button class="btn"mat-icon-button [routerLink]="['/sign-in']" routerLinkActive="mat-accent" >
+        LOGIN
+    </button>
+  </div>
+  <div>
+    <button class="btn" mat-icon-button [routerLink]="['/sign-up']" routerLinkActive="mat-accent" >
+      SIGN UP
+    </button>
+  </div>
   
-  
-    <a class="head" mat-list-item routerLink = '/sign-in'>
-      <mat-icon >input</mat-icon>
-      <span >SignIn</span>
-      </a>
-  
-    <a class="head" mat-list-item routerLink = '/sign-up'>
-      <mat-icon >account_circle</mat-icon>
-      <span>SignUp  </span>
-      </a>
-  
+
   
 </mat-toolbar>
 
