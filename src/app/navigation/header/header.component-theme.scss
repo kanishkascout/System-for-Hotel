@@ -7,6 +7,6 @@
     $accent : map-get($hotelSystem,accent);
 
     a{
-        color :mat-color($accent);
+        color :mat-color($accent,500);
     }
 }
