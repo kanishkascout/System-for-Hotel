@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LocationComponent } from './location/location.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { DiningComponent } from './dining/dining.component';
+import { SignupComponent } from './signup/signup.component';
  
 const routes: Routes = [
   {path: 'accomodation', component: AccomodationComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'offers', component: OffersComponent},
   {path: 'weddings', component: WeddingsComponent},
   {path: 'signin', component: SigninComponent},
+  {path: 'signup' , component : SignupComponent},
   {path: '' , component: HomeComponent},
   {path: 'contact' , component: ContactComponent},
   {path: 'location' , component: LocationComponent},

@@ -26,6 +26,7 @@ import { SigninComponent } from './signin/signin.component';
 import { MessageComponent } from './message/message.component';
 import { FormsModule } from '@angular/forms';
 import { DiningComponent } from './dining/dining.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -45,8 +46,10 @@ import { DiningComponent } from './dining/dining.component';
     GalleryComponent,
     FooterComponent,
     SigninComponent,
+    SignupComponent,
     MessageComponent,
-    DiningComponent
+    DiningComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
