@@ -88,16 +88,7 @@ $hotelSystem: mat-light-theme($primary, $accent, $hotelSystem-warn);
 
 //footer
 footer{
-    background-color: mat-color($primary,700);
-}
-
-.menu-footer-menu-container{
-    color:mat-color($accent,400);
-}
-
-footer {
-    color: mat-color($accent,400);
-    
+    background-color: mat-color($primary,400);
 }
 
 .route{
