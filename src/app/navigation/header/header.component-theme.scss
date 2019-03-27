@@ -6,11 +6,7 @@
     $primary : map-get($hotelSystem,primary);
     $accent : map-get($hotelSystem,accent);
 
-    .btn{
-        color :mat-color($accent,300);
-    }
-    .toolbar{
-        background-color: mat-color($primary,300);
-    }
+    
+    
    
 }

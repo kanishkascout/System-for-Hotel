@@ -1,4 +1,6 @@
-import { Component, OnInit ,EventEmitter ,Output } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
+import { MatDialog,MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { SigninComponent } from 'src/app/signin/signin.component';
 
 
 @Component({
@@ -8,11 +10,15 @@ import { Component, OnInit ,EventEmitter ,Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  
+  private dialog : MatDialog
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSignin(){
+    
   }
   
 }

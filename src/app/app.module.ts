@@ -16,9 +16,6 @@ import { ResortActivitiesComponent } from './lifestyle/resort-activities/resort-
 import { ExperiencesComponent } from './lifestyle/experiences/experiences.component';
 import { WeddingsComponent } from './weddings/weddings.component';
 import { OffersComponent } from './offers/offers.component';
-import { AuthComponent } from './auth/auth.component';
-import { SignInComponent } from './auth/sign-in/sign-in.component';
-import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
@@ -28,6 +25,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LocationComponent } from './location/location.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
+import { SigninComponent } from './signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -40,11 +38,7 @@ import { FooterComponent } from './footer/footer.component';
     ResortActivitiesComponent,
     ExperiencesComponent,
     WeddingsComponent,
-  
     OffersComponent,
-    AuthComponent,
-    SignInComponent,
-    SignUpComponent,
     HomeComponent,
     HeaderComponent,
     SidenavListComponent,
@@ -52,7 +46,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     LocationComponent,
     GalleryComponent,
-    FooterComponent
+    FooterComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +58,7 @@ import { FooterComponent } from './footer/footer.component';
     FlexLayoutModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents : [SigninComponent]
 })
 export class AppModule { }
