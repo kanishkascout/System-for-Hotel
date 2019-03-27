@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageComponent } from '../message/message.component';
+import { MatDialog } from '@angular/material';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigninComponent implements OnInit {
 
-  constructor() { }
+  public  email:  string  =  "";
+  public  password:  string  =  "";
+
+  constructor(private  dialog:  MatDialog, private  router:  Router) { }
 
   ngOnInit() {
   }
+  login(){
+    if(this.email  ===  "email@email.com"  &&  this.password  === "p@ssw0rd")
+    {
+        this.router.navigate(['success']);
+    }
+    else
+    {
+        this.dialog.open(MessageComponent,{ data: {
+        message:  "Error!!!"
+        }});
+    }
+}
 
 }

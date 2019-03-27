@@ -8,9 +8,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { AccomodationComponent } from './accomodation/accomodation.component';
-import { FoodAndBeverageComponent } from './food-and-beverage/food-and-beverage.component';
-import { RestaurantComponent } from './food-and-beverage/restaurant/restaurant.component';
-import { BarsComponent } from './food-and-beverage/bars/bars.component';
 import { LifestyleComponent } from './lifestyle/lifestyle.component';
 import { ResortActivitiesComponent } from './lifestyle/resort-activities/resort-activities.component';
 import { ExperiencesComponent } from './lifestyle/experiences/experiences.component';
@@ -26,14 +23,14 @@ import { LocationComponent } from './location/location.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { SigninComponent } from './signin/signin.component';
+import { MessageComponent } from './message/message.component';
+import { FormsModule } from '@angular/forms';
+import { DiningComponent } from './dining/dining.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccomodationComponent,
-    FoodAndBeverageComponent,
-    RestaurantComponent,
-    BarsComponent,
     LifestyleComponent,
     ResortActivitiesComponent,
     ExperiencesComponent,
@@ -47,7 +44,9 @@ import { SigninComponent } from './signin/signin.component';
     LocationComponent,
     GalleryComponent,
     FooterComponent,
-    SigninComponent
+    SigninComponent,
+    MessageComponent,
+    DiningComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +54,8 @@ import { SigninComponent } from './signin/signin.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

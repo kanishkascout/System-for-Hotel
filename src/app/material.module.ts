@@ -9,7 +9,10 @@ import {
     MatTabsModule,
     MatOptionModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
 } from "@angular/material";
 
 
@@ -25,7 +28,10 @@ import {
         MatTabsModule,
         MatOptionModule,
         MatSelectModule,
-        MatDialogModule
+        MatDialogModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule
     ],
     exports:[
         MatBadgeModule,
@@ -37,7 +43,10 @@ import {
         MatTabsModule,
         MatOptionModule,
         MatSelectModule,
-        MatDialogModule
+        MatDialogModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule
     ]   
 })
 
