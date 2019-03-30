@@ -6,6 +6,7 @@
 
 .logo {
     width: 100px;
+    height: 11vh;
 }
 
 .btn{
@@ -16,4 +17,6 @@
     background-color: #ff9000;
 
 }
-
+.header-container{
+    height: 90px;
+}

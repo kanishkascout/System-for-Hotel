@@ -6,7 +6,7 @@
     $accent : map-get($hotelSystem,accent);
 
     .navtabs{
-        background-color: mat-color($primary,200);
+        background-color: mat-color($primary);
         
     }
     .mytab{
@@ -18,7 +18,8 @@
     .mat-nav-list .mat-list-item:hover,
     .mat-nav-list .mat-list-item.mat-list-item-focus{
         background-color: mat-color($primary,300);
-        color:mat-color($primary,800);
+        color:white;
+        font-weight: bolder;
     }
     
 }

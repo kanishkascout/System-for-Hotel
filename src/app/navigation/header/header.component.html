@@ -1,41 +1,17 @@
-
-	<header class="header">
-      <div class="header_content d-flex flex-column align-items-center justify-content-lg-end justify-content-center">
-        
-        <!-- Logo -->
-        <div class="logo"><a href="#"><img class="logo_1" src="assets/images/logo.png" alt=""><img class="logo_2" src="assets/images/logo_2.png" alt=""><img class="logo_3" src="assets/images/logo_3.png" alt=""></a></div>
-  
-        <!-- Main Nav -->
-        <nav class="main_nav">
-            <div class="logo"><a href="#"><img class="logo_1" src="assets/images/logo.png" alt=""><img class="logo_2" src="assets/images/logo_2.png" alt=""><img class="logo_3" src="assets/images/logo_3.png" alt=""></a></div>
-          <ul class="d-flex flex-row align-items-center justify-content-start">
-            <li class="active"><a href="">Home</a></li>
-            <li><a href="/accomodation">Accomodation</a></li>
-            <li><a href="/dining">Dining</a></li>
-            <li><a href="/weddings">Weddings</a></li>
-            
-            <li><a href="/offers">Offers</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </nav>
-  
+<mat-toolbar class="header-container" color ="primary">
+    
        
-  
-        <!-- Header Right -->
-        <div class="header_right d-flex flex-row align-items-center justify-content-start">
-          
-            <div>
-                <button class="btn"mat-button [routerLink]="['/signin']" routerLinkActive="mat-primary" (click)="openDialog()" >
-                    LOGIN
-                </button>
-              </div>
-              <div>
-                <button class="btn" mat-button [routerLink]="['/signup']" routerLinkActive="mat-primary" >
-                  SIGN UP
-                </button>
-              </div>
-  
+        <button class="btn" mat-icon-button [routerLink]="['/']" routerLinkActive="mat-accent" >
+            <mat-icon >home</mat-icon>
+    
+        </button>
+      
+      <div class="logo-container">
+          <div fxLayout="column" fxLayoutAlign= "center center">
+              <img class="logo" src="/assets/images/logo.png" >
+          </div>
+      
         </div>
-        
-        </div>
-    </header>
+ 
+
+</mat-toolbar>

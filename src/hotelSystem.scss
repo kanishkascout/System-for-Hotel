@@ -3,20 +3,20 @@
 @include mat-core();
 
 $primary : (
-    50 : #e0e0e0,
-    100 : #b3b3b3,
-    200 : #808080,
-    300 : #4d4d4d,
-    400 : #262626,
-    500 : #000000,
-    600 : #000000,
-    700 : #000000,
-    800 : #000000,
-    900 : #000000,
-    A100 : #a6a6a6,
-    A200 : #8c8c8c,
-    A400 : #737373,
-    A700 : #666666,
+    50 : #e2e1e5,
+    100 : #b7b5bd,
+    200 : #878491,
+    300 : #565365,
+    400 : #322e44,
+    500 : #0e0923,
+    600 : #0c081f,
+    700 : #0a061a,
+    800 : #080515,
+    900 : #04020c,
+    A100 : #5050ff,
+    A200 : #1d1dff,
+    A400 : #0000e9,
+    A700 : #0000cf,
     contrast: (
         50 : #000000,
         100 : #000000,
@@ -28,27 +28,27 @@ $primary : (
         700 : #ffffff,
         800 : #ffffff,
         900 : #ffffff,
-        A100 : #000000,
-        A200 : #000000,
+        A100 : #ffffff,
+        A200 : #ffffff,
         A400 : #ffffff,
         A700 : #ffffff,
     )
 );
 $accent : (
-    50 : #fefce3,
-    100 : #fdf8b9,
-    200 : #fbf38a,
-    300 : #f9ee5b,
-    400 : #f8ea37,
-    500 : #f7e614,
-    600 : #f6e312,
-    700 : #f5df0e,
-    800 : #f3db0b,
-    900 : #f1d506,
+    50 : #fff2e0,
+    100 : #ffdeb3,
+    200 : #ffc880,
+    300 : #ffb14d,
+    400 : #ffa126,
+    500 : #ff9000,
+    600 : #ff8800,
+    700 : #ff7d00,
+    800 : #ff7300,
+    900 : #ff6100,
     A100 : #ffffff,
-    A200 : #fffce6,
-    A400 : #fff5b3,
-    A700 : #fff199,
+    A200 : #fff6f2,
+    A400 : #ffd3bf,
+    A700 : #ffc2a6,
     contrast: (
         50 : #000000,
         100 : #000000,
@@ -88,10 +88,10 @@ $hotelSystem: mat-light-theme($primary, $accent, $hotelSystem-warn);
 
 //footer
 footer{
-    background-color: mat-color($primary,400);
+    background-color: mat-color($primary,500);
 }
 
 .route{
-    color: mat-color($accent,400);
+    color: mat-color($accent,500);
 }
 
