@@ -1,6 +1,90 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 .home{
-    margin-top: 0%;
+   
     background: url('/assets/images/home.jpg');
+    height: 100vh;
+   
 }
+
+.booking-form {
+	max-width: 586px;
+	width: 100%;
+	margin: auto;
+}
+
+.booking-form>form {
+    background-color: #ffffff;
+	padding: 40px;
+	-webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    color: #0e0923;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+/* Form CSS*/
+.reservform {
+   margin: 0 auto;
+    width: 650px;
+    align-content: center;
+}
+.reservfield-prepend{
+	margin-bottom:10px;
+	width:100%;
+}
+
+.reservform-addon{
+	
+	float:left;
+	padding:9.5px;
+	width:25%;
+	background:#FFFFFF;
+    text-align:left;
+    margin-right: 30px;	
+}
+.reservformfield-1 {
+	color:#0e0923; 
+	background:#FFffff;
+    border:none;
+    float:left;
+    margin-right: 150px;
+    margin-bottom: 20px;
+	padding:9.5px;
+	width:10%;
+	display:block;
+	font-family: 'Lato',Arial,sans-serif;
+	font-size:14px;
+}
+
+.reservformfield {
+	color:#0e0923; 
+	background:#FFFFFF;
+	border:none;
+	padding:10.5px;
+	width:20%;
+	display:block;
+	font-family: 'Lato',Arial,sans-serif;
+	font-size:14px;
+}
+.reservbtn{
+	display:block;
+	border:none;
+	background:#0e0923;
+	color:#ff9000;
+	cursor:pointer;
+	text-decoration:none;
+    font-weight:bolder;
+    margin-left: 250px;
+    height: 35px;
+    align-items: center;
+}
+.reservbtn:hover{
+    background:#ff9000;
+    color: #ffffff;
+
+}
+
 
 
