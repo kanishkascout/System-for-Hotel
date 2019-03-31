@@ -3,29 +3,83 @@
 <header class="ccheader">
     <h1>Contact Us</h1>	
 </header>
-    <form method="post" action="" class="ccform">
+    <form method="post" action="" class="ccform" (ngSubmit)="processForm()">
     <div class="ccfield-prepend">
         <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
-        <input class="ccformfield" type="text" placeholder="Full Name" required>
+        <input
+        name = "name"
+        class="ccformfield" 
+        type="text" 
+        placeholder="Full Name" 
+        [(ngModel)]="name"
+        required
+        minlength="5"
+        #nameInput="ngModel">
+        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+                Name is required and needs to be at least 5 characters long.
+        </div>
     </div>
     <div class="ccfield-prepend">
         <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
-        <input class="ccformfield" type="text" placeholder="Email" required>
+        <input
+        name ="email" 
+        class="ccformfield" 
+        type="email" 
+        placeholder="Email" 
+        [(ngModel)]="email"
+        required
+        email
+        #emailInput="ngModel">
+        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+                Needs to be a valid email.
+        </div>
     </div>
     <div class="ccfield-prepend">
         <span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
-        <input class="ccformfield" type="text" placeholder="Phone">
+        <input
+        name ="phone" 
+        class="ccformfield" 
+        type="text" 
+        placeholder="Phone"
+        [(ngModel)]="phone"
+        required
+        minlength="10"
+        maxlength="10"
+        #phoneInput="ngModel">
+        <div class="help is-error" *ngIf="phoneInput.invalid && phoneInput.dirty">
+                Phone number is required.
+        </div>
     </div>
      <div class="ccfield-prepend">
         <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
-        <input class="ccformfield" type="text" placeholder="Subject" required>
+        <input
+        name="subject" 
+        class="ccformfield" 
+        type="text" 
+        placeholder="Subject" 
+        [(ngModel)]="subject"
+        required
+        #subjectInput="ngModel">
+        <div class="help is-error" *ngIf="subjectInput.invalid && subjectInput.dirty">
+                Name is required and needs to be at least 5 characters long.
+        </div>
     </div>
     <div class="ccfield-prepend">
         <span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
-        <textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
+        <textarea 
+        class="ccformfield" 
+        name="message" 
+        rows="8" 
+        placeholder="Message" 
+        required
+        [(ngModel)]="message"
+        #messageInput="ngModel"></textarea>
+        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+                Your message is required!
+        </div>
     </div>
     <div class="ccfield-prepend">
-        <input class="ccbtn" type="submit" value="Submit">
+        <button mat-button class="ccbtn" type="submit" >Submit </button>
     </div>
     </form>
 </div>

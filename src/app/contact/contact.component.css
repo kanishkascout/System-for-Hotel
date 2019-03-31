@@ -74,11 +74,11 @@ body {
 	border:none;
 	background:#ff9000;
 	color:#FFFFFF;
-	padding:12px 25px;
 	cursor:pointer;
 	text-decoration:none;
-    font-weight:bolder;
-    margin-left: 350px;
+  font-weight:bolder;
+	margin-left: 350px;
+	height: 35px;
 }
 .ccbtn:hover{
 	background:#ff9000;

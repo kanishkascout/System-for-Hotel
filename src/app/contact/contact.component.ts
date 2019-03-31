@@ -7,17 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   
-  optionsSelect: Array<any>;
+  name: string;
+  email: string;
+  phone :BigInteger;
+  subject : string;
+  message: string;
 
   constructor() { }
 
   ngOnInit() {
-    this.optionsSelect = [
-      { value: 'Feedback', label: 'Feedback' },
-      { value: 'Report a bug', label: 'Report a bug' },
-      { value: 'Feature request', label: 'Feature request' },
-      { value: 'Other stuff', label: 'Other stuff' },
-    ];
+    
+  }
+  processForm() {
+    const allInfo = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
+    
   }
 
 }
