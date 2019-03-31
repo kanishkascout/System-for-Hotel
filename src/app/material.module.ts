@@ -34,7 +34,6 @@ import {
         MatFormFieldModule,
         MatInputModule,
         MatCheckboxModule,
-        MatCardModule
     ],
     exports:[
         MatBadgeModule,
@@ -50,8 +49,7 @@ import {
         MatCardModule,
         MatFormFieldModule,
         MatInputModule,
-        MatCheckboxModule,
-        MatCardModule
+        MatCheckboxModule
     ]   
 })
 

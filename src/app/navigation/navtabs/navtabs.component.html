@@ -35,12 +35,12 @@
           </a>
           
           <div class="btn_group">
-                <button class="btn"mat-button [routerLink]="['/signin']" routerLinkActive="mat-accent" >
+                <button class="btn"mat-button  routerLinkActive="mat-accent"(click)  = "onSignin()" >
                     LOGIN
                 </button>
               </div>
               <div>
-                <button class="btn" mat-button [routerLink]="['/signup']" routerLinkActive="mat-accent" >
+                <button class="btn" mat-button  routerLinkActive="mat-accent" (click)  = "onSignup()" >
                   SIGN UP
                 </button>
               </div>
