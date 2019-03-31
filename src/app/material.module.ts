@@ -12,7 +12,8 @@ import {
     MatDialogModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatCheckboxModule
 } from "@angular/material";
 
 
@@ -31,7 +32,9 @@ import {
         MatDialogModule,
         MatCardModule,
         MatFormFieldModule,
-        MatInputModule
+        MatInputModule,
+        MatCheckboxModule,
+        MatCardModule
     ],
     exports:[
         MatBadgeModule,
@@ -46,7 +49,9 @@ import {
         MatDialogModule,
         MatCardModule,
         MatFormFieldModule,
-        MatInputModule
+        MatInputModule,
+        MatCheckboxModule,
+        MatCardModule
     ]   
 })
 
