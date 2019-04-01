@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { AgmCoreModule } from '@agm/core';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -28,7 +32,6 @@ import { MessageComponent } from './message/message.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DiningComponent } from './dining/dining.component';
 import { SignupComponent } from './signup/signup.component';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -62,7 +65,10 @@ import { from } from 'rxjs';
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
-    AgmCoreModule
+    AgmCoreModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
