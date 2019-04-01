@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -24,9 +25,10 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { SigninComponent } from './signin/signin.component';
 import { MessageComponent } from './message/message.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DiningComponent } from './dining/dining.component';
 import { SignupComponent } from './signup/signup.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { SignupComponent } from './signup/signup.component';
     HttpClientModule,
     MaterialModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    AgmCoreModule
   ],
   providers: [],
   bootstrap: [AppComponent],

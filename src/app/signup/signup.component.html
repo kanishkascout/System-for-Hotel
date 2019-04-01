@@ -1,3 +1,63 @@
-<p>
-  signup works!
-</p>
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<div mat-card class="wrapper">
+   
+<header class="signupheader">
+    
+    <h1>Sign Up Form </h1>
+
+</header>
+    <form method="post" action="" class="signupform" (ngSubmit)="signupForm()">
+    <div class="signupfield-prepend">
+        <span class="signupform-addon"><i class="fa fa-user fa-2x"></i></span>
+        <input
+        name = "name"
+        class="signupformfield" 
+        type="text" 
+        placeholder="Full Name" 
+        [(ngModel)]="name"
+        required
+        minlength="5"
+        #nameInput="ngModel">
+        
+    </div>
+    <div class="signupfield-prepend">
+        <span class="signupform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+        <input
+        name ="email" 
+        class="signupformfield" 
+        type="email" 
+        placeholder="Email" 
+        [(ngModel)]="email"
+        required
+        #emailInput="ngModel">
+       
+    </div>
+    <div class="signupfield-prepend">
+        <span class="signupform-addon"><i class="fa fa-key fa-2x"></i></span>
+        <input
+        name ="password" 
+        class="signupformfield" 
+        type="password" 
+        placeholder="Password" 
+        [(ngModel)]="password"
+        required>
+    </div>
+    <div class="signupfield-prepend">
+        <span class="signupform-addon"><i class="fa fa-lock fa-2x"></i></span>
+        <input
+        name ="confirmPassword" 
+        class="signupformfield" 
+        type="password" 
+        placeholder="Confirm Password" 
+        [(ngModel)]="confirmPassword"
+        required>
+    </div>
+    <div class="signupfield-prepend">
+        <button mat-button class="signupbtn" type="submit" >Sign Up </button>
+    </div>
+    <div class="signupfield-prepend">
+        <span style="margin-left:50px;font-family: 'Lato',Arial,sans-serif;" >If you are already a member : </span>
+        <a style="font-family: 'Lato',Arial,sans-serif;"class="links" routerLink = '' >  Sign IN Here</a>
+    </div>
+    </form>
+</div>
