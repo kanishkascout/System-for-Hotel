@@ -11,6 +11,8 @@ import { LocationComponent } from './location/location.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { DiningComponent } from './dining/dining.component';
 import { SignupComponent } from './signup/signup.component';
+import { ForgetpasswordComponent } from './user/forgetpassword/forgetpassword.component';
+import { VerifyemailComponent } from './user/verifyemail/verifyemail.component';
  
 const routes: Routes = [
   {path: 'accomodation', component: AccomodationComponent},
@@ -23,7 +25,9 @@ const routes: Routes = [
   {path: 'contact' , component: ContactComponent},
   {path: 'location' , component: LocationComponent},
   {path: 'gallery' , component: GalleryComponent},
-  {path: 'dining' , component :DiningComponent}
+  {path: 'dining' , component :DiningComponent},
+  {path: 'forgetpassword', component :ForgetpasswordComponent},
+  {path: 'verifyemail', component :VerifyemailComponent}
 ];
 
 @NgModule({

@@ -32,6 +32,8 @@ import { MessageComponent } from './message/message.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DiningComponent } from './dining/dining.component';
 import { SignupComponent } from './signup/signup.component';
+import { ForgetpasswordComponent } from './user/forgetpassword/forgetpassword.component';
+import { VerifyemailComponent } from './user/verifyemail/verifyemail.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { SignupComponent } from './signup/signup.component';
     SignupComponent,
     MessageComponent,
     DiningComponent,
-    SignupComponent
+    SignupComponent,
+    ForgetpasswordComponent,
+    VerifyemailComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,9 @@ import { SignupComponent } from './signup/signup.component';
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
-    AgmCoreModule,
+    AgmCoreModule.forRoot({
+      apiKey : 'AIzaSyBEG1L3R7cG3vhTnvNRMxHLRve9W4Sb8i8'
+    }),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFirestoreModule,
