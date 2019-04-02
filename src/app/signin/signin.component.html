@@ -31,14 +31,13 @@
         required>
     </div>
     <div class="signupfield-prepend">
-            <a style="font-family: 'Lato',Arial,sans-serif;color: #0e0923;"class="links" routerLink = '' >  Forgot Password ?</a>
+        <span style="font-family: 'Lato',Arial,sans-serif;color: #0e0923;" routerLink="/forgetpassword">Forgot Password?</span>    
         </div>
     <div class="signupfield-prepend">
-        <button mat-button class="signupbtn" type="submit" >Login </button>
+        <button mat-button class="signupbtn" type="submit" (click)="authService.SignIn(name.value, password.value)" >Login </button>
     </div>
     <div class="signupfield-prepend">
-        <span style="margin-left:50px;font-family: 'Lato',Arial,sans-serif;" >If you are new member : </span>
-        <a style="font-family: 'Lato',Arial,sans-serif;"class="links" routerLink = '' >  Sign UP Here</a>
+        <span style="font-family: 'Lato',Arial,sans-serif;">Don't have an account?<span style="font-family: 'Lato',Arial,sans-serif;"class="links" routerLink="/signup"> Sign Up</span></span>
     </div>
     </form>
 </div>

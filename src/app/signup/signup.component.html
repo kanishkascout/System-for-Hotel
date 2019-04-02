@@ -53,11 +53,10 @@
         required>
     </div>
     <div class="signupfield-prepend">
-        <button mat-button class="signupbtn" type="submit" >Sign Up </button>
+        <button mat-button class="signupbtn" type="submit"(click)="authService.SignUp(email.value, password.value)" >Sign Up </button>
     </div>
     <div class="signupfield-prepend">
-        <span style="margin-left:50px;font-family: 'Lato',Arial,sans-serif;" >If you are already a member : </span>
-        <a style="font-family: 'Lato',Arial,sans-serif;"class="links" routerLink = '' >  Sign IN Here</a>
+        <span style="font-family: 'Lato',Arial,sans-serif;">Already have an account? <span class="redirect" style="font-family: 'Lato',Arial,sans-serif;" routerLink="/signin">Log In</span></span>
     </div>
     </form>
 </div>
