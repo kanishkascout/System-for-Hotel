@@ -2,5 +2,6 @@ export interface User {
     uid : string;
     name : string;
     email : string;
-    verifyemail : boolean;
+    password :string;
+    emailVerified : boolean;
 }

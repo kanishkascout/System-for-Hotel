@@ -34,6 +34,7 @@ import { DiningComponent } from './dining/dining.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgetpasswordComponent } from './user/forgetpassword/forgetpassword.component';
 import { VerifyemailComponent } from './user/verifyemail/verifyemail.component';
+import { AuthService } from './service/auth.service';
 
 
 @NgModule({
@@ -77,7 +78,7 @@ import { VerifyemailComponent } from './user/verifyemail/verifyemail.component';
     AngularFireAuthModule,
     AngularFirestoreModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent],
   entryComponents : [SigninComponent]
 })
