@@ -4,7 +4,8 @@
 
 .wrapper{
     background-color:#ffffff;
-    width: 400px;
+	width: 400px;
+	position: inherit;
 
 }
 .signupheader {

@@ -34,6 +34,8 @@ import { DiningComponent } from './dining/dining.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgetpasswordComponent } from './user/forgetpassword/forgetpassword.component';
 import { VerifyemailComponent } from './user/verifyemail/verifyemail.component';
+import { AuthService } from './service/auth.service';
+import { Router, NavigationStart } from '@angular/router';
 
 
 @NgModule({
@@ -77,8 +79,26 @@ import { VerifyemailComponent } from './user/verifyemail/verifyemail.component';
     AngularFireAuthModule,
     AngularFirestoreModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent],
   entryComponents : [SigninComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  showHead: boolean = false;
+
+  ngOnInit() {
+  }
+
+  constructor(private router: Router) {
+  // on route change to '/login', set the variable showHead to false
+    router.events.forEach((event) => {
+      if (event instanceof NavigationStart) {
+        if (event['url'] == '/signin') {
+          this.showHead = false;
+        } else {
+          this.showHead = true;
+        }
+      }
+    });
+  }
+}
