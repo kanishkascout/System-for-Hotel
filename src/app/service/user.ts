@@ -3,5 +3,6 @@ export interface User {
     name : string;
     email : string;
     password :string;
+    retypePassword : string;
     emailVerified : boolean;
 }
