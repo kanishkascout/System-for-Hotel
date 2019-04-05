@@ -80,7 +80,7 @@ AuthLogin(provider) {
 return this.afAuth.auth.signInWithPopup(provider)
 .then((result) => {
 this.ngZone.run(() => {
-this.router.navigate(['']);
+this.router.navigate(['admin/dashboard']);
 })
 this.SetUserData(result.user);
 }).catch((error) => {

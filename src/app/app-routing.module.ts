@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'lifestyle', component: LifestyleComponent},
   {path: 'offers', component: OffersComponent},
   {path: 'weddings', component: WeddingsComponent},
-  {path: 'signin', component: SigninComponent},
+  {path: 'signin', component: SigninComponent, data: { title: 'welcome', footer: false}},
   {path: 'signup' , component : SignupComponent},
   {path: '' , component: HomeComponent},
   {path: 'contact' , component: ContactComponent},
