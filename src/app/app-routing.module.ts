@@ -13,6 +13,7 @@ import { DiningComponent } from './dining/dining.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgetpasswordComponent } from './user/forgetpassword/forgetpassword.component';
 import { VerifyemailComponent } from './user/verifyemail/verifyemail.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
  
 const routes: Routes = [
   {path: 'accomodation', component: AccomodationComponent},
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path: 'gallery' , component: GalleryComponent},
   {path: 'dining' , component :DiningComponent},
   {path: 'forgetpassword', component :ForgetpasswordComponent},
-  {path: 'verifyemail', component :VerifyemailComponent}
+  {path: 'verifyemail', component :VerifyemailComponent},
+  {path: 'admin', component :DashboardComponent}
 ];
 
 @NgModule({

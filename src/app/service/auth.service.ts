@@ -33,7 +33,7 @@ logged in and setting up null when logged out */
         return this.afAuth.auth.signInWithEmailAndPassword(email, password)
         .then((result) => {
         this.ngZone.run(() => {
-        this.router.navigate(['']);
+        this.router.navigate(['admin']);
         });
         this.SetUserData(result.user);
         }).catch((error) => {

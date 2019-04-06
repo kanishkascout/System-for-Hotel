@@ -38,6 +38,7 @@ import { AuthService } from './service/auth.service';
 import { Router, NavigationStart } from '@angular/router';
 import { NavtabsService } from './navigation/navtabs/navtabs.service';
 import { HeaderService } from './navigation/header/header.service';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { HeaderService } from './navigation/header/header.service';
     DiningComponent,
     SignupComponent,
     ForgetpasswordComponent,
-    VerifyemailComponent
+    VerifyemailComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -81,7 +83,7 @@ import { HeaderService } from './navigation/header/header.service';
     AngularFireAuthModule,
     AngularFirestoreModule,
   ],
-  providers: [AuthService,NavtabsService,HeaderService],
+  providers: [AuthService,NavtabsService],
   bootstrap: [AppComponent],
   entryComponents : [SigninComponent]
 })
