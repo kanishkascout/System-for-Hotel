@@ -1,6 +1,7 @@
 import { Component, OnInit  } from '@angular/core';
 import { MatDialog,MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { SigninComponent } from 'src/app/signin/signin.component';
+import { HeaderService } from './header.service';
 
 
 @Component({
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   private dialog : MatDialog
 
-  constructor() { }
+  constructor(public header:HeaderService) { }
 
   ngOnInit() {
   }

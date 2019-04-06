@@ -1,11 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
+.container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(14,9,35,0.88);
+	z-index: 101;
+	height: 640px;
+	border-bottom: solid 2px #ff9000;
+}
+
+.logo{
+	height: 120px;
+	width: 120px;
+}
 
 
 .wrapper{
     background-color:#ffffff;
-	width: 400px;
+	width: 500px;
+	height: 350px;
 	position: inherit;
+	margin-top: 25px;
+	margin-left: 420px;
+	
 
 }
 .signupheader {
@@ -66,7 +85,6 @@
     font-weight:bolder;
     margin-left: 140px;
     margin-top: 35px;
-    margin-bottom: 40px;
     height: 40px;
     width: 100px;
 }

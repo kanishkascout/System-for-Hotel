@@ -36,6 +36,7 @@ import { ForgetpasswordComponent } from './user/forgetpassword/forgetpassword.co
 import { VerifyemailComponent } from './user/verifyemail/verifyemail.component';
 import { AuthService } from './service/auth.service';
 import { Router, NavigationStart } from '@angular/router';
+import { NavtabsService } from './navigation/navtabs/navtabs.service';
 
 
 @NgModule({
@@ -79,7 +80,7 @@ import { Router, NavigationStart } from '@angular/router';
     AngularFireAuthModule,
     AngularFirestoreModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService,NavtabsService],
   bootstrap: [AppComponent],
   entryComponents : [SigninComponent]
 })

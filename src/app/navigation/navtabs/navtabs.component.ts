@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material';
 import { SigninComponent } from 'src/app/signin/signin.component';
 import { SignupComponent } from 'src/app/signup/signup.component';
+import { NavtabsService } from './navtabs.service';
 
 @Component({
   selector: 'app-navtabs',
@@ -10,7 +11,7 @@ import { SignupComponent } from 'src/app/signup/signup.component';
 })
 export class NavtabsComponent implements OnInit {
 
-  constructor(private dialog:MatDialog) { }
+  constructor(private dialog:MatDialog,public nav:NavtabsService) { }
 
   ngOnInit() {
   }
