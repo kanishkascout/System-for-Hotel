@@ -6,7 +6,9 @@
     $primary : map-get($hotelSystem,primary);
     $accent : map-get($hotelSystem,accent);
 
-    
+    .header-container{
+        background-color: mat-color($primary);
+    }
     
    
 }

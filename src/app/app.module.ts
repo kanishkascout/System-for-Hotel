@@ -37,6 +37,7 @@ import { VerifyemailComponent } from './user/verifyemail/verifyemail.component';
 import { AuthService } from './service/auth.service';
 import { Router, NavigationStart } from '@angular/router';
 import { NavtabsService } from './navigation/navtabs/navtabs.service';
+import { HeaderService } from './navigation/header/header.service';
 
 
 @NgModule({
@@ -80,7 +81,7 @@ import { NavtabsService } from './navigation/navtabs/navtabs.service';
     AngularFireAuthModule,
     AngularFirestoreModule,
   ],
-  providers: [AuthService,NavtabsService],
+  providers: [AuthService,NavtabsService,HeaderService],
   bootstrap: [AppComponent],
   entryComponents : [SigninComponent]
 })
