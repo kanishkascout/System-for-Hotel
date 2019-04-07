@@ -3,6 +3,8 @@ import { AuthService } from '../service/auth.service';
 import { NavtabsService } from '../navigation/navtabs/navtabs.service';
 import { FooterService } from '../footer/footer.service';
 import { HeaderService } from '../navigation/header/header.service';
+import { MatDialog, MatDialogConfig } from '@angular/material';
+import { ForgetpasswordComponent } from '../user/forgetpassword/forgetpassword.component';
 
 
 @Component({
@@ -13,7 +15,7 @@ import { HeaderService } from '../navigation/header/header.service';
 export class SigninComponent implements OnInit {
   
 
-  constructor(public nav:NavtabsService,public authService: AuthService,public footer:FooterService,public header:HeaderService) { }
+  constructor(public nav:NavtabsService,public dialog:MatDialog,public authService: AuthService,public footer:FooterService,public header:HeaderService) { }
 
   ngOnInit() {
     this.nav.hide();
@@ -21,6 +23,12 @@ export class SigninComponent implements OnInit {
     this.header.hide();
   }
 
+  onForgotpassowrd(){
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus =true;
+    this.dialog.open(ForgetpasswordComponent);
+  }
 
 }
 

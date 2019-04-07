@@ -36,7 +36,7 @@
             #userPassword required>
         </div>
         <div class="signupfield-prepend">
-            <span style="font-family: 'Lato',Arial,sans-serif;color: #0e0923;"routerLink="/forgetpassword" >Forgot Password?</span>    
+            <span style="font-family: 'Lato',Arial,sans-serif;color: #0e0923;"(click)="onForgotpassowrd()" >Forgot Password?</span>    
             </div>
         <div class="signupfield-prepend">
             <button mat-button class="signupbtn" type="submit" (click)="authService.SignIn(userName.value, userPassword.value)" >Login </button>
