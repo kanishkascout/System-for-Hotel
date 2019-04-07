@@ -21,5 +21,7 @@ export class SignupComponent implements OnInit {
     this.header.hide();
   }
 
-
+  backClicked() {
+    window.history.back();
+  }
 }

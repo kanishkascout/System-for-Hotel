@@ -30,6 +30,11 @@ export class SigninComponent implements OnInit {
     this.dialog.open(ForgetpasswordComponent);
   }
 
+  
+  backClicked() {
+    window.history.back();
+  }
+
 }
 
 
