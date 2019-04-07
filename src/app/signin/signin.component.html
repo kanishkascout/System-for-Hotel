@@ -36,13 +36,13 @@
             #userPassword required>
         </div>
         <div class="signupfield-prepend">
-            <span style="font-family: 'Lato',Arial,sans-serif;color: #0e0923;"(click)="onForgotpassowrd()" >Forgot Password?</span>    
+            <span style="font-family: 'Lato',Arial,sans-serif;color: #ffffff;"(click)="onForgotpassowrd()" >Forgot Password?</span>    
             </div>
         <div class="signupfield-prepend">
             <button mat-button class="signupbtn" type="submit" (click)="authService.SignIn(userName.value, userPassword.value)" >Login </button>
         </div>
         <div class="signupfield-prepend">
-                <span style="font-family: 'Lato',Arial,sans-serif;">Don't have an account?<span style="font-family: 'Lato',Arial,sans-serif;"class="links" routerLink="/signup"> Sign Up</span></span>
+                <span style="font-family: 'Lato',Arial,sans-serif;margin-right:50px;color: #ffffff;">Don't have an account?<button mat-button class="btn" routerLink="/signup"> Sign Up</button></span>
             </div>
         </form>
     </div>
