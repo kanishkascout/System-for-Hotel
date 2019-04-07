@@ -1,4 +1,11 @@
-<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<html>
+<div class="container">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <div class="logo-container">
+            <div fxLayout="column" fxLayoutAlign= "left">
+                <img class="logo" src="/assets/images/logo.png" >
+            </div> 
+    </div>
 <div mat-card class="wrapper">
    
 <header class="signupheader">
@@ -7,19 +14,6 @@
 
 </header>
     <form method="post" action="" class="signupform" (ngSubmit)="signupForm()">
-    <div class="signupfield-prepend">
-        <span class="signupform-addon"><i class="fa fa-user fa-2x"></i></span>
-        <input
-        name = "name"
-        class="signupformfield" 
-        type="text" 
-        placeholder="Full Name" 
-        [(ngModel)]="name"
-        required
-        minlength="5"
-        #nameInput="ngModel">
-        
-    </div>
     <div class="signupfield-prepend">
         <span class="signupform-addon"><i class="fa fa-envelope fa-2x"></i></span>
         <input
@@ -54,7 +48,9 @@
         <button mat-button class="signupbtn" type="submit"(click)="authService.SignUp(userEmail.value, userPwd.value)" >Sign Up </button>
     </div>
     <div class="signupfield-prepend">
-        <span style="font-family: 'Lato',Arial,sans-serif;">Already have an account? <span class="redirect" style="font-family: 'Lato',Arial,sans-serif;">Log In</span></span>
+        <span style="font-family: 'Lato',Arial,sans-serif;">Already have an account? <span class="redirect" style="font-family: 'Lato',Arial,sans-serif;"routerLink="/signin">Log In</span></span>
     </div>
     </form>
 </div>
+</div>
+</html>

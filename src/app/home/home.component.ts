@@ -15,8 +15,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.nav.show();
     this.footer.show();
-    this.header.show();
-  
+  this.header.show();
   }
 
 }
