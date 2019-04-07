@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebaseConfig: { 
-  apiKey: 'AIzaSyAW3gFiyk8vztv44vWf_R4cfKPv7z06NTM',
-  authDomain: 'hotelsystem-88973.firebaseapp.com',
-  databaseURL: 'https://hotelsystem-88973.firebaseio.com',
-  projectId: 'hotelsystem-88973',
-  storageBucket: 'hotelsystem-88973.appspot.com',
-  messagingSenderId: '117048847114'
+    apiKey: 'AIzaSyDOM5FnyeoiEJdhh-Y4XMUwxigMctXxepk',
+    authDomain: 'hotelsystem-97269.firebaseapp.com',
+    databaseURL: 'https://hotelsystem-97269.firebaseio.com',
+    projectId: 'hotelsystem-97269',
+    storageBucket: 'hotelsystem-97269.appspot.com',
+    messagingSenderId: '859713914922'
   }
   
     
