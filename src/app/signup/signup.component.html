@@ -10,7 +10,7 @@
    
 <header class="signupheader">
     
-    <h1>Sign Up Form </h1>
+    <h1>Sign Up Here </h1>
 
 </header>
     <form method="post" action="" class="signupform" (ngSubmit)="signupForm()">
@@ -48,7 +48,7 @@
         <button mat-button class="signupbtn" type="submit"(click)="authService.SignUp(userEmail.value, userPwd.value)" >Sign Up </button>
     </div>
     <div class="signupfield-prepend">
-        <span style="font-family: 'Lato',Arial,sans-serif;">Already have an account? <span class="redirect" style="font-family: 'Lato',Arial,sans-serif;"routerLink="/signin">Log In</span></span>
+        <span style="font-family: 'Lato',Arial,sans-serif;color: #ffffff;">Already have an account? <button mat-button class="btn" routerLink="/signin"> Sign In</button></span>
     </div>
     </form>
 </div>

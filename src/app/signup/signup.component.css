@@ -7,7 +7,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: rgba(14,9,35,0.88);
+	background: url('/assets/images/background_1.gif');
 	z-index: 101;
 	height: 640px;
 	border-bottom: solid 2px #ff9000;
@@ -22,12 +22,13 @@
 
 
 .wrapper{
-    background-color:#ffffff;
-	width: 500px;
-	height: 400px;
+	background: rgba(8,4,10,0.88);
+	border: solid 2px #ff9000;
+	width: 450px;
+	height: 375px;
 	position: inherit;
 	margin-top: 25px;
-	margin-left: 420px;
+	margin-left: 445px;
 	
 
 }
@@ -40,9 +41,10 @@
 .signupheader h1 {
 	margin: 0;
 	font-weight: bolder;
-	font-size: 2em;
+	font-size: 1.5em;
+	font-family: 'Lato',Arial,sans-serif;
 	line-height: 1.3;
-	color: #0e0923;
+	color: #ffffff;
 }
 
 /* Form CSS*/
@@ -62,7 +64,7 @@
 	float:left;
 	padding:8px;
 	width:10%;
-	background: #ffffff;;
+	background: transparent;
 	text-align:center;
 	align-self: center;	
 }
@@ -73,6 +75,7 @@
 	border-color: #fafafa;
 	padding:10.5px;
 	width:65%;
+	height: 15px;
 	display:block;
 	font-family: 'Lato',Arial,sans-serif;
 	font-size:14px;
@@ -82,20 +85,29 @@
 .signupbtn{
 	display:block;
 	border:none;
-	background:#0e0923;
+	background:#ff9000;
 	color:#ffffff;
 	cursor:pointer;
 	text-decoration:none;
     font-weight:bolder;
     margin-left: 140px;
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin-top: 20px;
     height: 40px;
-    width: 100px;
+    width: 80px;
 }
 .signupbtn:hover{
-	background:#0e0923;
+	background:#ffffff;
 	color: #ff9000;
+}
+.btn{
+	font-family: 'Lato',Arial,sans-serif;
+	color: #ff9000;
+	background: transparent;
+	font-weight: 400;
+	font-size: 15px;
+}
+.btn:hover{
+	color: #ffffff;
 }
 .credit {
   width: 800px;
