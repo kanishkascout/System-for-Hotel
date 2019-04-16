@@ -39,7 +39,9 @@ import { Router, NavigationStart } from '@angular/router';
 import { NavtabsService } from './navigation/navtabs/navtabs.service';
 import { HeaderService } from './navigation/header/header.service';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
-
+import { MealsListComponent } from './dining/meals-list/meals-list.component';
+import { MealsDetailComponent } from './dining/meals-detail/meals-detail.component';
+import { MealsItemComponent } from './dining/meals-list/meals-item/meals-item.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +67,10 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
     SignupComponent,
     ForgetpasswordComponent,
     VerifyemailComponent,
-    DashboardComponent
+    DashboardComponent,
+    MealsListComponent,
+    MealsDetailComponent,
+    MealsItemComponent
   ],
   imports: [
     BrowserModule,
