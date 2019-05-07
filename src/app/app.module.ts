@@ -7,6 +7,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 
+import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -42,6 +43,9 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { MealsListComponent } from './dining/meals-list/meals-list.component';
 import { MealsDetailComponent } from './dining/meals-detail/meals-detail.component';
 import { MealsItemComponent } from './dining/meals-list/meals-item/meals-item.component';
+import { WeddingsFormService } from './weddings/weddings-form.service';
+import { WeddingsFormComponent } from './weddings/weddings-form/weddings-form.component';
+import { WeddingsListComponent } from './weddings/weddings-list/weddings-list.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +74,9 @@ import { MealsItemComponent } from './dining/meals-list/meals-item/meals-item.co
     DashboardComponent,
     MealsListComponent,
     MealsDetailComponent,
-    MealsItemComponent
+    MealsItemComponent,
+    WeddingsFormComponent,
+    WeddingsListComponent
   ],
   imports: [
     BrowserModule,
@@ -87,8 +93,9 @@ import { MealsItemComponent } from './dining/meals-list/meals-item/meals-item.co
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    ToastrModule.forRoot()
   ],
-  providers: [AuthService,NavtabsService],
+  providers: [AuthService,NavtabsService,WeddingsFormService],
   bootstrap: [AppComponent],
   entryComponents : [SigninComponent]
 })

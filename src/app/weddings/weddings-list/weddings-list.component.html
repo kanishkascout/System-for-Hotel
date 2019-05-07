@@ -1,0 +1,42 @@
+<table class="table table-hover">
+  <thead>
+    <th>name</th>
+    <th>address</th>
+    <th>email</th>
+    <th>phoneNoL</th>
+    <th>PhoneNoM</th>
+    <th>eventName</th>
+    <th>eventType</th>
+    <th>eventTime</th>
+    <th>eventDayFrom</th>
+    <th>eventDayTo</th>
+    <th>alterDayFrom</th>
+    <th>alterDayTo</th>
+    <th>noOfPart</th>
+    <th>location</th>
+    <th>rooms</th>
+    <th>noOfRooms</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let wed of list">
+        <td>{{wed.name}}</td>
+        <td>{{wed.address}}</td>
+        <td>{{wed.email}}</td>
+        <td>{{wed.phoneNoL}}</td>
+        <td>{{wed.PhoneNoM}}</td>
+        <td>{{wed.eventName}}</td>
+        <td>{{wed.eventType}}</td>
+        <td>{{wed.eventTime}}</td>
+        <td>{{wed.eventDayFrom}}</td>
+        <td>{{wed.eventDayTo}}</td>
+        <td>{{wed.alterDayFrom}}</td>
+        <td>{{wed.alterDayTo}}</td>
+        <td>{{wed.noOfPart}}</td>
+        <td>{{wed.location}}</td>
+        <td>{{wed.rooms}}</td>
+        <td>{{wed.noOfRooms}}</td>
+        <td><a  class="btn text-danger" (click)="onDelete(wed.id)"><i class="fa fa-trash"></i></a> </td>
+    </tr>
+   
+  </tbody>
+</table>       

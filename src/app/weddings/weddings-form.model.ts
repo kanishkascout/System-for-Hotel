@@ -1,0 +1,19 @@
+export class WeddingsForm {
+    id:string;
+    name:string;
+    address:string;
+    email:string;
+    phoneNoL:string;
+    PhoneNoM:string;
+    eventName:string;
+    eventType:string;
+    eventTime:string;
+    eventDayFrom:string;
+    eventDayTo:string;
+    alterDayFrom:string;
+    alterDayTo:string;
+    noOfPart:string;
+    location:string;
+    rooms:string;
+    noOfRooms:string;
+}

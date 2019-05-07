@@ -1,5 +1,7 @@
 h6{
     border-radius: 5px;
+    margin:10px; 
+    background-color:gray;
 }
 
 form{
